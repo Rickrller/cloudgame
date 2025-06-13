@@ -1,0 +1,223 @@
+[gd_scene load_steps=7 format=3 uid="uid://bpjsnifqsgn42"]
+
+[ext_resource type="Script" path="res://ClaudPlayer.gd" id="1_iggd2"]
+[ext_resource type="Texture2D" uid="uid://dv3uxvti3gyi8" path="res://Assets/Claud Less Shadow.png" id="2_irrht"]
+[ext_resource type="Texture2D" uid="uid://blbogasp474ir" path="res://Assets/Placeholder.png" id="3_5qfxb"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pkjxg"]
+radius = 16.0
+height = 48.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_021uc"]
+size = Vector2(447, 51.6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2nlp"]
+size = Vector2(3.79993, 437.2)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Claud" type="CharacterBody2D" parent="."]
+scale = Vector2(4, 4)
+script = ExtResource("1_iggd2")
+
+[node name="Collision" type="CollisionShape2D" parent="Claud"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="ClaudLessShadow" type="Sprite2D" parent="Claud"]
+texture = ExtResource("2_irrht")
+
+[node name="HurtboxManager" type="Area2D" parent="Claud"]
+
+[node name="Hurtbox" type="CollisionShape2D" parent="Claud/HurtboxManager"]
+rotation = 1.5708
+scale = Vector2(0.95, 0.95)
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="Claud2" type="CharacterBody2D" parent="."]
+position = Vector2(400, 0)
+scale = Vector2(4, 4)
+script = ExtResource("1_iggd2")
+
+[node name="Collision" type="CollisionShape2D" parent="Claud2"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="ClaudLessShadow" type="Sprite2D" parent="Claud2"]
+texture = ExtResource("2_irrht")
+
+[node name="HurtboxManager" type="Area2D" parent="Claud2"]
+
+[node name="Hurtbox" type="CollisionShape2D" parent="Claud2/HurtboxManager"]
+rotation = 1.5708
+scale = Vector2(0.95, 0.95)
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="Claud3" type="CharacterBody2D" parent="."]
+position = Vector2(0, 200)
+scale = Vector2(4, 4)
+script = ExtResource("1_iggd2")
+
+[node name="Collision" type="CollisionShape2D" parent="Claud3"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="ClaudLessShadow" type="Sprite2D" parent="Claud3"]
+texture = ExtResource("2_irrht")
+
+[node name="HurtboxManager" type="Area2D" parent="Claud3"]
+
+[node name="Hurtbox" type="CollisionShape2D" parent="Claud3/HurtboxManager"]
+rotation = 1.5708
+scale = Vector2(0.95, 0.95)
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="Claud4" type="CharacterBody2D" parent="."]
+position = Vector2(-400, 0)
+scale = Vector2(4, 4)
+script = ExtResource("1_iggd2")
+
+[node name="Collision" type="CollisionShape2D" parent="Claud4"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="ClaudLessShadow" type="Sprite2D" parent="Claud4"]
+texture = ExtResource("2_irrht")
+
+[node name="HurtboxManager" type="Area2D" parent="Claud4"]
+
+[node name="Hurtbox" type="CollisionShape2D" parent="Claud4/HurtboxManager"]
+rotation = 1.5708
+scale = Vector2(0.95, 0.95)
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="Claud5" type="CharacterBody2D" parent="."]
+position = Vector2(0, -200)
+scale = Vector2(4, 4)
+script = ExtResource("1_iggd2")
+
+[node name="Collision" type="CollisionShape2D" parent="Claud5"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="ClaudLessShadow" type="Sprite2D" parent="Claud5"]
+texture = ExtResource("2_irrht")
+
+[node name="HurtboxManager" type="Area2D" parent="Claud5"]
+
+[node name="Hurtbox" type="CollisionShape2D" parent="Claud5/HurtboxManager"]
+rotation = 1.5708
+scale = Vector2(0.95, 0.95)
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="Claud6" type="CharacterBody2D" parent="."]
+position = Vector2(400, -200)
+scale = Vector2(4, 4)
+script = ExtResource("1_iggd2")
+
+[node name="Collision" type="CollisionShape2D" parent="Claud6"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="ClaudLessShadow" type="Sprite2D" parent="Claud6"]
+texture = ExtResource("2_irrht")
+
+[node name="HurtboxManager" type="Area2D" parent="Claud6"]
+
+[node name="Hurtbox" type="CollisionShape2D" parent="Claud6/HurtboxManager"]
+rotation = 1.5708
+scale = Vector2(0.95, 0.95)
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="Claud7" type="CharacterBody2D" parent="."]
+position = Vector2(-400, -200)
+scale = Vector2(4, 4)
+script = ExtResource("1_iggd2")
+
+[node name="Collision" type="CollisionShape2D" parent="Claud7"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="ClaudLessShadow" type="Sprite2D" parent="Claud7"]
+texture = ExtResource("2_irrht")
+
+[node name="HurtboxManager" type="Area2D" parent="Claud7"]
+
+[node name="Hurtbox" type="CollisionShape2D" parent="Claud7/HurtboxManager"]
+rotation = 1.5708
+scale = Vector2(0.95, 0.95)
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="Claud8" type="CharacterBody2D" parent="."]
+position = Vector2(-400, 200)
+scale = Vector2(4, 4)
+script = ExtResource("1_iggd2")
+
+[node name="Collision" type="CollisionShape2D" parent="Claud8"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="ClaudLessShadow" type="Sprite2D" parent="Claud8"]
+texture = ExtResource("2_irrht")
+
+[node name="HurtboxManager" type="Area2D" parent="Claud8"]
+
+[node name="Hurtbox" type="CollisionShape2D" parent="Claud8/HurtboxManager"]
+rotation = 1.5708
+scale = Vector2(0.95, 0.95)
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="Claud9" type="CharacterBody2D" parent="."]
+position = Vector2(400, 200)
+scale = Vector2(4, 4)
+script = ExtResource("1_iggd2")
+
+[node name="Collision" type="CollisionShape2D" parent="Claud9"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="ClaudLessShadow" type="Sprite2D" parent="Claud9"]
+texture = ExtResource("2_irrht")
+
+[node name="HurtboxManager" type="Area2D" parent="Claud9"]
+
+[node name="Hurtbox" type="CollisionShape2D" parent="Claud9/HurtboxManager"]
+rotation = 1.5708
+scale = Vector2(0.95, 0.95)
+shape = SubResource("CapsuleShape2D_pkjxg")
+
+[node name="GameCam" type="Camera2D" parent="."]
+
+[node name="Placeholder" type="Sprite2D" parent="."]
+position = Vector2(-800, -432)
+scale = Vector2(9.508, 4)
+texture = ExtResource("3_5qfxb")
+
+[node name="CamBorder" type="StaticBody2D" parent="."]
+scale = Vector2(5, 5)
+
+[node name="4" type="CollisionShape2D" parent="CamBorder"]
+position = Vector2(1, 86.2)
+shape = SubResource("RectangleShape2D_021uc")
+
+[node name="2" type="CollisionShape2D" parent="CamBorder"]
+position = Vector2(194.4, 0)
+shape = SubResource("RectangleShape2D_d2nlp")
+
+[node name="1" type="CollisionShape2D" parent="CamBorder"]
+position = Vector2(-194.4, 0)
+shape = SubResource("RectangleShape2D_d2nlp")
+
+[node name="3" type="CollisionShape2D" parent="CamBorder"]
+position = Vector2(0, -127)
+shape = SubResource("RectangleShape2D_021uc")
+
+[node name="Placeholder2" type="Sprite2D" parent="."]
+position = Vector2(825, -432)
+scale = Vector2(7.954, 4)
+texture = ExtResource("3_5qfxb")
+
+[node name="Placeholder3" type="Sprite2D" parent="."]
+position = Vector2(-3.56409, 474)
+scale = Vector2(60.9727, 4)
+texture = ExtResource("3_5qfxb")
